@@ -216,10 +216,11 @@ section {
   .hero-text {
     padding-top: 115px;
   }
-  .hero-img {
+  .hero-img,
+  .hero-img-goblin {
     text-align: center;
   }
-  .hero-img img {
+  .hero-img-goblin {
     width: 560px;
     height: auto;
   }
@@ -262,8 +263,20 @@ section {
   }
 }
 @media (max-width: 680px) {
-  .hero-img {
+  .hero-img,
+  .hero-img-goblin {
     width: 100%;
     height: auto;
+  }
+}
+@media (max-width: 450px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+  }
+  .buttons a.ctaa {
+    margin-left: 0px;
   }
 }
