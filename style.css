@@ -102,7 +102,7 @@ section {
 }
 
 .hero-img-goblin {
-  width: 700px;
+  width: 600px;
   height: auto;
 }
 
@@ -173,6 +173,13 @@ section {
   transform: translateY(-5px);
 }
 
+@media (max-width: 1660px) {
+  .hero-img,
+  .hero-img-goblin {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 1535px) {
   header {
     padding: 15px 3%;
@@ -186,12 +193,20 @@ section {
     right: 3%;
     transition: 0.2s;
   }
+  .hero-img-goblin {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 1460px) {
   .section {
     padding: 0 12%;
     transition: 0.2s;
+  }
+  .hero-img-goblin {
+    width: 90%;
+    height: auto;
   }
 }
 
@@ -206,6 +221,15 @@ section {
   }
   .hero-text h5 {
     margin-bottom: 25px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+  }
+  .buttons a.ctaa {
+    margin-left: 0px;
   }
 }
 @media (max-width: 1034px) {
@@ -234,6 +258,15 @@ section {
   }
   .scroll-down {
     display: none;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+  }
+  .buttons a.ctaa {
+    margin-left: 0px;
   }
 }
 @media (max-width: 990px) {
